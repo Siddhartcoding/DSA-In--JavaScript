@@ -7,10 +7,8 @@
 // Intput: n=3 ------>>>>> Output: 2
 
 const Fibonacci = function (n) {
-  if (n == 0 || n == 1) return n;
-  else if (n < 0) {
-    return 0;
-  } else {
+  if (n <= 1) return n;
+  else {
     return Fibonacci(n - 1) + Fibonacci(n - 2);
   }
 };
